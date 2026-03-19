@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harevalagan | IT Infrastructure & Cloud Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;font-family:Poppins;}
+
+body {
+  background:#020617;
+  color:#e2e8f0;
+  scroll-behavior:smooth;
+}
+
+/* NAV */
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:20px 10%;
+  position:sticky;
+  top:0;
+  background:#020617;
+  z-index:1000;
+}
+nav h2 {color:#38bdf8;}
+nav a {color:white;margin-left:20px;text-decoration:none;}
+
+/* HERO */
+.hero {
+  text-align:center;
+  padding:100px 20px;
+}
+.hero h1 {font-size:45px;}
+.hero span {color:#38bdf8;}
+.hero p {color:#94a3b8;margin-top:10px;}
+
+/* BUTTON */
+.btn {
+  margin-top:20px;
+  display:inline-block;
+  padding:12px 25px;
+  background:#38bdf8;
+  color:black;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* SECTION */
+.section {padding:60px 10%;}
+
+/* CARD */
+.card {
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  padding:20px;
+  margin:15px 0;
+  border-radius:12px;
+  opacity:0;
+  transform:translateY(20px);
+  transition:0.6s;
+}
+.card.show {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* SKILLS */
+.skill-bar {margin:10px 0;}
+.bar {background:#1e293b;height:8px;border-radius:10px;}
+.progress {height:8px;background:#38bdf8;border-radius:10px;}
+
+/* WHATSAPP */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+}
+
+/* IMG */
+img {border-radius:10px;margin-top:10px;}
+
+footer {
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Harevalagan</h2>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Harevalagan S</h1>
+<p>IT Infrastructure & Cloud Engineer</p>
+<p>Windows | Linux | Azure | Virtualization | Automation</p>
+
+<a href="resume.pdf" download class="btn">⬇ Download Resume</a><br>
+<a href="https://www.linkedin.com/in/harevalagan-s-421a06172/" class="btn">LinkedIn</a>
+</section>
+
+<!-- VALUE -->
+<section class="section">
+<div class="card">
+<h2>What I Deliver</h2>
+<ul>
+<li>✔ 99.9% Infrastructure Uptime</li>
+<li>✔ Managed 1000+ Users</li>
+<li>✔ Saved $35K+ Annually</li>
+<li>✔ 87% Faster Automation</li>
+</ul>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="section">
+<h2>Career Highlights</h2>
+<div class="grid">
+<div class="card"><h3>1000+</h3><p>Users</p></div>
+<div class="card"><h3>99.9%</h3><p>Uptime</p></div>
+<div class="card"><h3>$35K+</h3><p>Savings</p></div>
+<div class="card"><h3>5+</h3><p>Years</p></div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2>Professional Summary</h2>
+<div class="card">
+<p>
+IT Infrastructure Engineer with 5+ years experience in Windows, Linux, Azure, virtualization, and enterprise systems. Proven in managing large-scale infrastructure with high availability and performance optimization.
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+<h2>Core Skills</h2>
+<div class="card">
+
+<div class="skill-bar">Windows Server
+<div class="bar"><div class="progress" style="width:95%"></div></div>
+</div>
+
+<div class="skill-bar">Linux
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill-bar">VMware / Hyper-V
+<div class="bar"><div class="progress" style="width:92%"></div></div>
+</div>
+
+<div class="skill-bar">Azure / Cloud
+<div class="bar"><div class="progress" style="width:88%"></div></div>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+<h2>Experience</h2>
+
+<div class="card">
+<h3>IT Executive – LRS Services</h3>
+<p>Managed 1000+ users | 99.9% uptime | Automation</p>
+</div>
+
+<div class="card">
+<h3>Sr. Network Administrator</h3>
+<p>52+ servers | 300+ VMs | Multi-location infra</p>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Zabbix Monitoring</h3>
+<p>Reduced downtime by 40%</p>
+<img src="zabbix.png" width="100%">
+</div>
+
+<div class="card">
+<h3>Azure AD Hybrid</h3>
+<p>Unified identity for 500+ endpoints</p>
+<img src="azure.png" width="100%">
+</div>
+
+<div class="card">
+<h3>Automation</h3>
+<p>Deployment time reduced by 87%</p>
+<img src="automation.png" width="100%">
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: harevalagan8@zohomail.in</p>
+<p>Phone: +91-8248734530</p>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+<div class="card">
+<h2>Let’s Work Together</h2>
+<p>Available for IT Infrastructure & Cloud roles</p>
+<a href="resume.pdf" class="btn">Hire Me</a>
+</div>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/918248734530" class="whatsapp">💬</a>
+
+<footer>
+<p>© 2026 Harevalagan | IT Infrastructure Engineer</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if(top < window.innerHeight - 50){
+      card.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
