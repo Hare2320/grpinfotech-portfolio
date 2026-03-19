@@ -161,9 +161,9 @@ GRP Infotech provides reliable IT infrastructure, networking, and cloud services
 <h2>Contact Us</h2>
 
 <div class="card">
-<form onsubmit="sendWhatsApp(); return false;">
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="text" id="phone" placeholder="Phone Number" required>
+<form onsubmit="saveData(); return false;">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Phone Number" required>
 <textarea id="message" placeholder="Your Requirement"></textarea>
 
 <button type="submit">Send Enquiry</button>
@@ -173,7 +173,7 @@ GRP Infotech provides reliable IT infrastructure, networking, and cloud services
 </section>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/918248734530" class="whatsapp">💬</a>
+<a href="https://wa.me/918248734531" class="whatsapp">💬</a>
 
 <script>
 function sendWhatsApp(){
@@ -181,7 +181,7 @@ let name = document.getElementById("name").value;
 let phone = document.getElementById("phone").value;
 let message = document.getElementById("message").value;
 
-let url = "https://wa.me/918248734530?text="
+let url = "https://wa.me/918248734531?text="
 + "Name: " + name + "%0a"
 + "Phone: " + phone + "%0a"
 + "Message: " + message;
