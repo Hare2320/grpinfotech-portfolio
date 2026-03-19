@@ -1,9 +1,11 @@
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
 <script>
-let pass = prompt("Enter Admin Password:");
-if(pass !== "admin123"){
-  alert("Access Denied");
-  window.location="index.html";
-}
+firebase.auth().onAuthStateChanged(function(user) {
+  if (!user) {
+    window.location = "login.html";
+  }
+});
 </script>
 <!DOCTYPE html>
 <html>
