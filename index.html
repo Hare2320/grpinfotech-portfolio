@@ -217,12 +217,26 @@ function saveData() {
   let message = document.getElementById("message").value;
 
   /* SAVE TO DATABASE */
+  function saveData() {
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
+
   db.collection("enquiries").add({
     name: name,
     phone: phone,
     message: message,
-    date: new Date()
+    date: new Date().toISOString()
+  })
+  .then(() => {
+    alert("Saved successfully ✅");
+  })
+  .catch((error) => {
+    alert("Error: " + error);
+    console.log(error);
   });
+}
 
   /* SEND EMAIL */
   emailjs.send("service_edkalpe","template_3cqua8u",{
